@@ -3,248 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy — DIG³</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-      * { margin: 0; padding: 0; box-sizing: border-box; }
-
-      body {
-        background: #f2e9d8;
-        color: #171717;
-        font-family: Roboto, Arial, sans-serif;
-        line-height: 1.7;
-      }
-
-      main {
-        max-width: 720px;
-        margin: 0 auto;
-        padding: 48px 24px 80px;
-      }
-
-      .brand {
-        font-size: 14px;
-        font-weight: 700;
-        color: #e52320;
-        letter-spacing: 0.08em;
-        margin-bottom: 12px;
-      }
-
-      h1 {
-        font-size: clamp(32px, 5vw, 48px);
-        letter-spacing: -0.04em;
-        line-height: 1.1;
-        margin-bottom: 8px;
-      }
-
-      .updated {
-        font-size: 14px;
-        color: rgb(23 23 23 / 0.5);
-        margin-bottom: 48px;
-      }
-
-      h2 {
-        font-size: 22px;
-        letter-spacing: -0.03em;
-        margin: 40px 0 14px;
-        padding-top: 32px;
-        border-top: 1px solid #bfb3a1;
-      }
-
-      h2:first-of-type {
-        margin-top: 0;
-        padding-top: 0;
-        border-top: none;
-      }
-
-      p, li {
-        font-size: 16px;
-        max-width: 640px;
-      }
-
-      p + p {
-        margin-top: 12px;
-      }
-
-      ul {
-        margin: 12px 0;
-        padding-left: 20px;
-      }
-
-      li {
-        margin-bottom: 6px;
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 16px 0;
-        font-size: 15px;
-      }
-
-      th, td {
-        text-align: left;
-        padding: 10px 14px;
-        border-bottom: 1px solid #bfb3a1;
-      }
-
-      th {
-        font-weight: 700;
-        font-size: 13px;
-        letter-spacing: 0.04em;
-        color: rgb(23 23 23 / 0.6);
-      }
-
-      a {
-        color: #171717;
-        font-weight: 700;
-        text-underline-offset: 3px;
-      }
-
-      footer {
-        max-width: 720px;
-        margin: 0 auto;
-        padding: 24px 24px 32px;
-        border-top: 1px solid #bfb3a1;
-        font-size: 14px;
-        color: rgb(23 23 23 / 0.6);
-      }
-
-      footer a {
-        color: rgb(23 23 23 / 0.6);
-      }
-
-      @media (max-width: 480px) {
-        main { padding: 32px 20px 56px; }
-        h2 { font-size: 20px; }
-      }
-    </style>
+    <title>digdigdig — A better way to dig music.</title>
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <main>
-      <p class="brand">DIG³</p>
-      <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: November 11, 2026</p>
+      <header>
+        <img class="logo" src="imgs/logo.png" alt="digdigdig" width="64" height="64" />
+        <p class="tagline">DIGDIGDIG | STOP COPY &amp; PASTE. JUST FEEL.</p>
+        <h1>A better way to dig music.</h1>
+        <p class="intro">
+          Find a track on one platform, search for it on another —
+          without copying and pasting.
+          You choose where to go next.
+        </p>
+        <img class="hero-illustration" src="imgs/illust-01.webp" alt="" aria-hidden="true" />
+        <nav aria-label="Page sections">
+          <a href="#general">How it works</a>
+          <a href="#sites">Supported sites</a>
+          <a href="#data">Your data</a>
+          <a href="privacy.html">Privacy policy</a>
+        </nav>
+      </header>
 
-      <h2>What DIG³ does</h2>
-      <p>
-        DIG³ (digdigdig) is a Chrome extension that helps you search for tracks
-        across music platforms. It reads track details on supported pages and
-        adds search links so you can find the same track on another site —
-        without copying and pasting.
-      </p>
+      <section id="general">
+        <p class="section-label">01 / GENERAL</p>
+        <h2>Copy less. Dig more.</h2>
+        <p>
+          Open a track list on Beatport, Soundeo, or a YouTube video with a
+          Music card. digdigdig adds search links below each track. Click a
+          link to open search results on the destination site in a new tab.
+        </p>
+        <p>
+          Use the popup to turn digdigdig on or off for the current site and
+          choose which search destinations appear. Your choices stay saved
+          when you turn a site off.
+        </p>
+      </section>
 
-      <h2>Data we access</h2>
-      <p>
-        DIG³ reads the following information from supported pages to build
-        search links:
-      </p>
-      <ul>
-        <li>Track title</li>
-        <li>Artist name(s)</li>
-        <li>Mix / remix name</li>
-      </ul>
-      <p>This data is processed entirely within your browser.</p>
+      <section id="sites">
+        <p class="section-label">02 / SITES</p>
+        <h2>Where you can dig</h2>
+        <dl>
+          <div><dt>Beatport</dt><dd>Track source and search destination</dd></div>
+          <div><dt>Soundeo</dt><dd>Track source and search destination</dd></div>
+          <div><dt>YouTube</dt><dd>Music cards on video pages and search destination</dd></div>
+          <div><dt>Bandcamp</dt><dd>Search destination only</dd></div>
+        </dl>
+        <p>Links appear only where digdigdig can recognize a complete track.</p>
+      </section>
 
-      <h2>Supported sites</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Site</th>
-            <th>Access scope</th>
-            <th>Purpose</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Beatport</td>
-            <td>beatport.com</td>
-            <td>Read track info, inject search links</td>
-          </tr>
-          <tr>
-            <td>Soundeo</td>
-            <td>soundeo.com</td>
-            <td>Read track info, inject search links</td>
-          </tr>
-          <tr>
-            <td>YouTube</td>
-            <td>youtube.com</td>
-            <td>Read Music card info, inject search links</td>
-          </tr>
-        </tbody>
-      </table>
-      <p>
-        Bandcamp is a search destination only — DIG³ does not access Bandcamp
-        pages.
-      </p>
-
-      <h2>Data we do NOT collect</h2>
-      <ul>
-        <li>DIG³ does not send track data to any DIG³ server.</li>
-        <li>DIG³ does not collect personal information, browsing history, or analytics.</li>
-        <li>DIG³ does not use cookies or third-party tracking.</li>
-      </ul>
-
-      <h2>What happens when you click a link</h2>
-      <p>
-        When you click a search link, the destination site receives the search
-        query as part of its URL. This is the same as typing the query into
-        that site's search bar manually. DIG³ does not control how the
-        destination site handles that query.
-      </p>
-
-      <h2>Storage</h2>
-      <p>
-        Your site preferences (which sites are enabled, which search
-        destinations to show) are saved using Chrome's sync storage API. This
-        data syncs across your signed-in Chrome browsers. No other data is
-        stored.
-      </p>
-
-      <h2>Permissions</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Permission</th>
-            <th>Reason</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>storage</td>
-            <td>Save your site and destination preferences</td>
-          </tr>
-          <tr>
-            <td>activeTab</td>
-            <td>Access the current tab to read track info on supported sites</td>
-          </tr>
-          <tr>
-            <td>Host access (beatport.com, soundeo.com, youtube.com)</td>
-            <td>Run content scripts to extract tracks and inject search links</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2>Third-party services</h2>
-      <p>
-        DIG³ does not use remote code, external APIs, or third-party services.
-        All functionality runs locally in your browser.
-      </p>
-
-      <h2>Changes to this policy</h2>
-      <p>
-        If this policy changes, the updated version will be published at this
-        URL with a new date. There is no other notification mechanism.
-      </p>
-
-      <h2>Contact</h2>
-      <p>
-        Questions or concerns? Reach out at
-        <a href="mailto:cozihyun@gmail.com">cozihyun@gmail.com</a>.
-      </p>
+      <section id="data">
+        <p class="section-label">03 / YOUR DATA</p>
+        <h2>Your dig stays yours.</h2>
+        <p>
+          digdigdig reads track details on supported pages to build search
+          links. It does not send them to any server. When you click a link,
+          the destination site receives the search words in its URL. Site
+          preferences are saved with Chrome sync storage.
+        </p>
+        <p>
+          No account. No analytics. No cookies. Read the full
+          <a href="privacy.html">privacy policy</a>.
+        </p>
+      </section>
     </main>
     <footer>
-      <p>DIG³ — STOP COPY & PASTE. JUST FEEL.</p>
+      <p>Got ideas? I'm all ears. Keep digging.</p>
+      <p><a href="mailto:cozihyun@gmail.com">cozihyun@gmail.com</a></p>
     </footer>
   </body>
 </html>

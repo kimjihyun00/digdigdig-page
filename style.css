@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #f2e9d8;
+  color: #171717;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+main {
+  max-width: 926px;
+  margin: 0 auto;
+  padding: 32px 24px 80px;
+}
+
+/* Header */
+header {
+  position: relative;
+  padding-bottom: 56px;
+}
+
+.logo {
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+
+.tagline,
+.section-label {
+  color: #e52320;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.tagline {
+  margin: 28px 0 12px;
+}
+
+h1 {
+  position: relative;
+  z-index: 1;
+  max-width: 650px;
+  margin: 0;
+  font-size: clamp(40px, 6vw, 76px);
+  line-height: 1.06;
+  letter-spacing: -0.065em;
+}
+
+.intro {
+  position: relative;
+  z-index: 1;
+  max-width: 620px;
+  margin: 32px 0 0;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.hero-illustration {
+  position: absolute;
+  top: 60px;
+  right: -28px;
+  width: 340px;
+  height: auto;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin-top: 36px;
+}
+
+/* Links */
+a {
+  color: #171717;
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+a:focus-visible {
+  outline: 2px solid #e52320;
+  outline-offset: 4px;
+}
+
+/* Sections */
+section {
+  padding: 46px 0 50px;
+  border-top: 1px solid #bfb3a1;
+}
+
+.section-label {
+  margin: 0 0 14px;
+}
+
+h2 {
+  margin: 0 0 22px;
+  font-size: 34px;
+  letter-spacing: -0.05em;
+}
+
+section p:not(.section-label) {
+  max-width: 760px;
+  line-height: 1.65;
+}
+
+/* Definition list */
+dl {
+  margin: 28px 0 0;
+}
+
+dl div {
+  display: flex;
+  gap: 20px;
+  padding: 12px 0;
+}
+
+dt {
+  flex: 0 0 125px;
+  font-weight: 700;
+}
+
+dd {
+  margin: 0;
+}
+
+/* Tables (privacy) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 15px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid #bfb3a1;
+}
+
+th {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: rgb(23 23 23 / 0.6);
+}
+
+/* Lists (privacy) */
+ul {
+  margin: 12px 0;
+  padding-left: 20px;
+  line-height: 1.65;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* Updated date (privacy) */
+.updated {
+  font-size: 14px;
+  color: rgb(23 23 23 / 0.5);
+  margin-bottom: 48px;
+}
+
+/* Privacy sections use h2 with border-top */
+.privacy-section {
+  margin: 40px 0 14px;
+  padding-top: 32px;
+  border-top: 1px solid #bfb3a1;
+  font-size: 22px;
+  letter-spacing: -0.03em;
+}
+
+.privacy-section:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+/* Footer */
+footer {
+  max-width: 926px;
+  margin: 0 auto;
+  padding: 24px 24px 32px;
+  border-top: 1px solid #bfb3a1;
+  font-size: 14px;
+  color: rgb(23 23 23 / 0.6);
+}
+
+footer p {
+  margin: 0;
+}
+
+footer p + p {
+  margin-top: 4px;
+}
+
+footer a {
+  color: rgb(23 23 23 / 0.6);
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+  h1 {
+    max-width: 100%;
+  }
+
+  .intro {
+    max-width: 100%;
+  }
+
+  .hero-illustration {
+    position: static;
+    display: block;
+    width: min(70%, 300px);
+    margin: 12px 0 -12px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 28px 20px 56px;
+  }
+
+  .tagline,
+  .section-label {
+    font-size: 12px;
+  }
+
+  .intro {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .privacy-section {
+    font-size: 20px;
+  }
+
+  dl div {
+    display: block;
+  }
+
+  dd {
+    margin-top: 2px;
+  }
+}
