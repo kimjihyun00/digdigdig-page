@@ -1,6 +1,6 @@
 @font-face {
   font-family: Roboto;
-  src: url("imgs/Roboto-Regular.ttf") format("truetype");
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: Roboto;
-  src: url("imgs/Roboto-Bold.ttf") format("truetype");
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700 900;
   font-display: swap;
@@ -72,6 +72,21 @@ h1 {
   line-height: 1.55;
 }
 
+.download-link {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin-top: 28px;
+  padding: 14px 22px;
+  background: #e52320;
+  color: #fff;
+  text-decoration: none;
+}
+
+.download-link:hover {
+  background: #bd1c1a;
+}
+
 .hero-illustration {
   position: absolute;
   top: 60px;
@@ -122,6 +137,30 @@ h2 {
 section p:not(.section-label) {
   max-width: 760px;
   line-height: 1.65;
+}
+
+/* Supported sites illustration */
+#sites {
+  position: relative;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+#sites dl,
+#sites > p:last-child {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+}
+
+.sites-illustration {
+  position: absolute;
+  right: -65px;
+  bottom: 20px;
+  width: min(70%, 620px);
+  height: auto;
+  mix-blend-mode: multiply;
+  pointer-events: none;
 }
 
 /* Definition list */
@@ -198,6 +237,41 @@ li {
   border-top: none;
 }
 
+/* Updates */
+.updates-header {
+  padding-bottom: 72px;
+}
+
+.release-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
+.release-heading .section-label {
+  margin-bottom: 0;
+}
+
+.release-status {
+  padding: 5px 9px;
+  border: 1px solid #e52320;
+  color: #e52320;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.release h2 {
+  margin-top: 14px;
+}
+
+.release-list {
+  max-width: 760px;
+  margin-top: 16px;
+}
+
 /* Footer */
 footer {
   max-width: 926px;
@@ -222,6 +296,18 @@ footer a {
 
 /* Responsive */
 @media (max-width: 760px) {
+  #sites {
+    min-height: 0;
+  }
+
+  .sites-illustration {
+    position: static;
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+  }
+
+
   h1 {
     max-width: 100%;
   }
